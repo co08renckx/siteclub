@@ -1,0 +1,12 @@
+{
+    "name": "dell/projet_tech",
+    "authors": [
+        {
+            "name": "mohammedZgh",
+            "email": "zoughagh.mohammed.1997@gmail.com"
+        }
+    ],
+    "require": {
+        "google/apiclient": "2.0"
+    }
+}
