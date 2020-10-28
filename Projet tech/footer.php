@@ -54,14 +54,13 @@
                         <!-- widgets list -->
                         <h1 class="title-widget">Nous Contacter</h1>
                         <div class="footerp">
-                            <h2 class="title-median">BDE EILCO Delta</h2>
+                            <h2 class="title-median">BDE EILCO Lagoon</h2>
                             <p><b>Email: </b> <a href="mailto:bde@eilco-ulco.fr">bde@eilco-ulco.fr</a></p>
                             <p>---</p>
                             <p><b>Nous trouver : </b></p>
                             <p><b>Calais : </b> A115 ou A110 ou à la MDE</p>
                             <p><b>Longuenesse : </b>Bureau du BDE</p>
-                            <p>---</p>
-                            <p><a href="/lequipe"><b>L'Équipe</b></a></p>
+                            
                         </div>
                         <div class="social-icons">
                             <ul class="nomargin">
