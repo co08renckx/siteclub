@@ -325,6 +325,7 @@ to{transform:rotatey(1turn)}}
                   <img src="img/rock.jpg" alt>
                   <img src="img/sport.jpg" alt>
                   <img src="img/sportmeca.png" alt>
+                  <img src="img/logotest.png" alt>
 
                 </div>
               </div>  
