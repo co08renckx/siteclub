@@ -47,8 +47,8 @@
   <body>
 
     <h1 class="site-heading text-center text-white d-none d-lg-block">
-      <span class="site-heading-upper text-primary mb-3">Eilco's</span>
-      <span class="site-heading-lower">Club</span>
+    <span class="site-heading-upper text-primary mb-3">Vie associative </span>
+    <span class="site-heading-lower">de l'EIL</span>
     </h1>
 
     <!-- Navigation -->
