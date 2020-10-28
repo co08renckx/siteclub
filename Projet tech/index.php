@@ -165,8 +165,8 @@ to{transform:rotatey(1turn)}}
 <body>
 
   <h1 class="site-heading text-center text-white d-none d-lg-block">
-    <span class="site-heading-upper text-primary mb-3">Eilco's</span>
-    <span class="site-heading-lower">Club</span>
+    <span class="site-heading-upper text-primary mb-3">Vie associative </span>
+    <span class="site-heading-lower">de l'EIL</span>
   </h1>
 
   <!-- Navigation -->
@@ -174,7 +174,7 @@ to{transform:rotatey(1turn)}}
     if(isset($_SESSION['login']) == ''){ ?>
       <nav class="navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
     <div class="container">
-      <a class="navbar-brand text-uppercase text-expanded font-weight-bold d-lg-none" href="index.php">Eilco's Club</a>
+      <a class="navbar-brand text-uppercase text-expanded font-weight-bold d-lg-none" href="index.php">Vie associative de l'EIL</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -202,7 +202,7 @@ to{transform:rotatey(1turn)}}
     else if($_SESSION['login'] == 'BDE'){ ?>
      <nav class="navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
     <div class="container">
-      <a class="navbar-brand text-uppercase text-expanded font-weight-bold d-lg-none" href="index.php">Eilco's Club</a>
+      <a class="navbar-brand text-uppercase text-expanded font-weight-bold d-lg-none" href="index.php">Vie associative de l'EIL</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -230,7 +230,7 @@ to{transform:rotatey(1turn)}}
     else if($_SESSION['login'] != 'BDE' and $_SESSION['login'] != 'SABINE Rensy'){ ?>
      <nav class="navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
       <div class="container">
-        <a class="navbar-brand text-uppercase text-expanded font-weight-bold d-lg-none" href="index.php">Eilco's Club</a>
+        <a class="navbar-brand text-uppercase text-expanded font-weight-bold d-lg-none" href="index.php">Vie associative de l'EIL</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -263,7 +263,7 @@ to{transform:rotatey(1turn)}}
   <?php } else if($_SESSION['login'] == 'SABINE Rensy') {?>
     <nav class="navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
       <div class="container">
-        <a class="navbar-brand text-uppercase text-expanded font-weight-bold d-lg-none" href="index.php">Eilco's Club</a>
+        <a class="navbar-brand text-uppercase text-expanded font-weight-bold d-lg-none" href="index.php">Vie associative de l'EIL</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -301,7 +301,7 @@ to{transform:rotatey(1turn)}}
             <span class="section-heading-lower">Création de club ou association</span>
             
           </h2>
-          <p class="mb-3" style="text-align: justify;">Si vous voulez intégrer la vie associative au sein de Eilco, vous pouvez créer votre propre club ou bien votre association par un simple clique sur le bouton ci-dessous.
+          <p class="mb-3" style="text-align: justify;">Si vous voulez intégrer la vie associative au sein de l'Eilco, vous pouvez créer votre propre club ou bien votre association par un simple clique sur le bouton ci-dessous.
           </p>
           <div class="intro-button mx-auto">
             <a class="btn btn-primary btn-xl" href="creation.php" style="font-size: 15px;margin-left: 5px;">Créer votre Club ou Association ici !</a>
