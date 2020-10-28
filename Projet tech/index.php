@@ -28,15 +28,15 @@ img{max-width:100%}
 .contenu_carou_auto{
 
 margin:2rem auto;
-width:420px;
-height:200px;
-perspective:8000px.
+width:200px;
+height:100px;
+perspective:10000px;
   
   }
     
 .caroussel-image{
   
-animation:rotation 24s infinite alternate linear; 
+animation:rotation 25s infinite alternate linear; 
 transform-style:preserve-3d;
 position:relative;  
 
@@ -59,86 +59,93 @@ filter:drop-shadow(0 12px 5px hsla(0,0%,0%,.4));
 width:400px;
 height:200px;
 left:10px;
-outline:1px solid transparent;
+right:10px;
+outline:5px solid transparent;
 backface-visibility:hidden
   
   }
     
 .caroussel-image img:nth-child(1){
   
-transform:translate3d(0,0,495px)
+  transform:rotateY(0deg) translateZ(495px)
+/*transform:translate3d(0,0,495px)*/
     
     }
     
 .caroussel-image img:nth-child(2){
   
-transform:rotateY(45deg) translateZ(495px)
+transform:rotateY(25deg) translateZ(495px)
   
     }
     
 .caroussel-image img:nth-child(3){
   
-  transform:rotateY(90deg) translateZ(495px)
+  transform:rotateY(50deg) translateZ(495px)
   
   }
   
 .caroussel-image img:nth-child(4){
   
-  transform:rotateY(135deg) translateZ(495px)
+  transform:rotateY(75deg) translateZ(495px)
   
   }
   
 .caroussel-image img:nth-child(5){
   
-  transform:rotateY(180deg) translateZ(495px)
+  transform:rotateY(100deg) translateZ(495px)
   
   }
   
 .caroussel-image img:nth-child(6){
   
-  transform:rotateY(225deg) translateZ(495px)
+  transform:rotateY(125deg) translateZ(495px)
   
   }
   
 .caroussel-image img:nth-child(7){
   
-  transform:rotateY(270deg) translateZ(495px)
+  transform:rotateY(150deg) translateZ(495px)
   
   }
   
 .caroussel-image img:nth-child(8){
   
-  transform:rotateY(315deg) translateZ(495px)
+  transform:rotateY(175deg) translateZ(495px)
   
   }
   .caroussel-image img:nth-child(9){
   
-  transform:rotateY(360deg) translateZ(495px)
+  transform:rotateY(200deg) translateZ(495px)
   
   }
   .caroussel-image img:nth-child(10){
   
-  transform:rotateY(405deg) translateZ(495px)
+  transform:rotateY(225deg) translateZ(495px)
   
   }
   .caroussel-image img:nth-child(11){
   
-  transform:rotateY(450deg) translateZ(495px)
+  transform:rotateY(250deg) translateZ(495px)
   
   }
   .caroussel-image img:nth-child(12){
   
-  transform:rotateY(495deg) translateZ(495px)
+  transform:rotateY(275deg) translateZ(495px)
   
   }
   .caroussel-image img:nth-child(13){
   
-  transform:rotateY(540deg) translateZ(495px)
+  transform:rotateY(300deg) translateZ(495px)
   
   }
   .caroussel-image img:nth-child(14){
   
-  transform:rotateY(675deg) translateZ(495px)
+  transform:rotateY(325deg) translateZ(495px)
+  
+  }
+  .caroussel-image img:nth-child(15){
+  
+  transform:rotateY(360deg) translateZ(495px)
   
   }
   
@@ -319,13 +326,13 @@ to{transform:rotatey(1turn)}}
                   <img src="img/eilcrew.png" alt>
                   <img src="img/gamers.png" alt>
                   <img src="img/LogoD10Cassé.png" alt>
-                  <img src="img/Logo-EilTech.png" alt>
+                  <img src="img/eiltech.png" alt>
                   <img src="img/Oeno.jpg" alt>
-                  <img src="img/opalien.png" alt>
+                  <img src="img/bde.png" alt>
                   <img src="img/rock.jpg" alt>
                   <img src="img/sport.jpg" alt>
                   <img src="img/sportmeca.png" alt>
-                  <img src="img/logotest.png" alt>
+                  <img src="img/opalien.png" alt>
 
                 </div>
               </div>  
