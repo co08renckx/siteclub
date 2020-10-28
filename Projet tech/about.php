@@ -106,9 +106,9 @@
                 
                 <span class="section-heading-lower">Projet associatif</span>
               </h2>
-              <p style="text-align: justify;">Le projet de vie associative touche plusieurs domaines à savoir : culture, sport, solidarité et engagement étudiant. Il permet aux élèves de réaliser des projets en équipes et de vivre une aventure humaine unique. De plus il leur offre la possibilité de s’intégrer dans le monde professionnel et de s’initier à la prise de responsabilité c'est une chose qui valorisera leur curriculum vitae.
-                C’est un projet obligatoire pour chaque élève ingénieur. Pour cela ils doivent créer ou reprendre une association ou un club en deuxième année de leur formation en cycle d’ingénieur (comme le BDE, BDS, Gala etc.).
-                Les élèves seront évalués par leur participation active dans un club ou une association, pour faire à la fin un rapport présentant les différents événements qu’ils ont organisés ainsi une soutenance leur sera demandé en mois Mai. La durée de cette dernière est fixé a 20 minutes et elle est suivit de 10 minutes de questions-réponses.</p>
+              <p style="text-align: justify;">Le projet de vie associative touche à plusieurs domaines comme : la culture, le sport, la solidarité et l'engagement. Il permet aux élèves de réaliser des projets en équipes et de vivre une aventure humaine unique. De plus il leur offre la possibilité de s’intégrer dans le monde professionnel et de s’initier à la prise de responsabilité.
+                C’est un projet obligatoire pour chaque élève ingénieur. Pour cela ils doivent créer ou reprendre une association ou un club en deuxième année de leur formation en cycle d’ingénieur (comme le BDE, BDS, Gala, etc).
+                Les élèves seront évalués sur leur participation active dans un club ou une association et sur un rapport présentant les différents événements qu’ils auront organisés. Une soutenance leur sera demandé au mois de Mai. La durée de cette dernière est fixé a 20 minutes et elle est suivit de 10 minutes de questions-réponses.</p>
               
             </div>
           </div>
