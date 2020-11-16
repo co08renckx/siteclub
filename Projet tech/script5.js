@@ -1,3 +1,4 @@
+//peut etre à modif pour le calendrier
 $(document).ready(function() {
    var calendar = $('#calendar').fullCalendar({
     editable:true,
@@ -239,7 +240,7 @@ $(document).ready(function() {
       let p_Club = document.createElement('p');
       let p_Date_evenement = document.createElement('p');
       let p_debut = document.createElement('p');
-       f.className ="w3-container w3-teal card-title ";
+       f.className ="w3-container card-header ";
        h_Club.className = 'w3-container card-title h3';
        h_Date_evenement.className = 'w3-container card-text h3';
        h_debut.className = 'w3-container card-text h3';
@@ -308,7 +309,7 @@ $(document).ready(function() {
      
       
       let f1 = document.createElement('div');
-      f1.className ='w3-container card';
+      f1.className ='w3-container card-body';
       
       
 

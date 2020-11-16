@@ -18,12 +18,12 @@ Class Club{
    public $mdp ;
    
 
-   function __construct ($Nom,$Type,$Annee,$datedecreation,$ChefDeProjet,$Promotion,$Specialite,$Objectif,$NomParrain,$email,$mdp){
+   function __construct ($Nom,$Type,$Annee,$datedecreation,$chef_de_projet,$Promotion,$Specialite,$Objectif,$NomParrain,$email,$mdp){
    	$this->Nom = $Nom ;
    	$this->Type = $Type ;
    	$this->Annee_universitaire= $Annee;
    	$this->date_creation= $datedecreation;
-   	$this->chef_de_projet= $ChefDeProjet;
+   	$this->chef_de_projet= $chef_de_projet ;
    	$this->promotion= $Promotion;
    	$this->specialite= $Specialite;
    	$this->Objectif= $Objectif;
@@ -37,7 +37,18 @@ Class Club{
     
    }
    function Addclub(){
+	   
     $BDD=Database_Connexion();
+	/*$req = $BDD->prepare('SELECT Nom FROM gestionnaire WHERE Email = :login AND password = :pass')or die(print_r($BDD->errorInfo())); // Je compte le nombre d'entrée ayant pour mot de passe et login ceux rentrés
+	$req->bindValue('login', $this->Email, PDO::PARAM_STR);
+	$req->bindValue('pass', $this->mdp, PDO::PARAM_STR);
+	$req->execute();
+	$donnees = $req->fetch();
+	$rows = $req->rowCount();
+	$req->closeCursor();
+	if ($rows == 1){
+    $this->chef_de_projet = $donnees['Nom'];
+	}*/
     $sql ='INSERT INTO Club (Nom,id_type,Annee_universitaire,Date_de_creation,chef_de_projet,id_promotion ,id_specialite,Objectif,Nom_Parrain,approuve_BDE,approuve_responsable,Email, mdp) Values (:Nom,:Type,:Annee_universitaire,:date_creation,:chef_de_projet,:promotion,:specialite,:Objectif,:Nom_Parrain,:approuve_BDE,:approuve_responsable,:Email,:Mdp)';
     $req=$BDD->prepare($sql);
     $req->bindValue('Nom', $this->Nom, PDO::PARAM_STR);
@@ -85,6 +96,10 @@ Class Club{
 
    function getNom(){
      return $this->Nom;
+   }
+   
+   function getChef(){
+     return $this->chef_de_projet;
    }
 
    function Setid($id){
@@ -174,6 +189,14 @@ Class Club{
    function AllClubTreated(){
     $BDD=Database_Connexion();
     $sql ='Select * from Club where approuve_responsable=1 and approuve_BDE=1';
+    $req=$BDD->query($sql);
+
+    return $req ;
+    
+   }
+   function AllClubFromUser($chef_de_projet){
+    $BDD=Database_Connexion();
+    $sql ='Select * from Club where approuve_responsable=1 and approuve_BDE=1 and chef_de_projet="'.$chef_de_projet.'"';
     $req=$BDD->query($sql);
 
     return $req ;

@@ -26,8 +26,8 @@
   <body>
     <?php session_start ();
     require"campus.php";
+	require"Club.php";
     $campus = new Campus("");
-    $_SESSION['id'] = $_SESSION['id'];;
     ?>
     <h1 class="site-heading text-center text-white d-none d-lg-block">
     <span class="site-heading-upper text-primary mb-3">Vie associative </span>
@@ -98,10 +98,28 @@
                   </select>
                    </span>
                </li>
-                <li class="form-group">
+                <!--<li class="form-group">
                   Responsable : 
                   <span class="ml-auto"><input type="text" class="form-control" name="resp_eve" required></span>
-                </li>
+                </li>-->
+				 <li class="form-group">
+                  Club :  
+                  <span class="ml-auto">
+                    <select id="club_id"  name="club_id" class="form-control">
+                    <?php
+                      $club = new Club("",0,"","","",0,0,"","","","");
+					  $chef = $_SESSION['login'];
+					  echo $chef;
+                      $clubs = $club->AllClubFromUser($chef);
+                      foreach ($clubs as $c) {
+                    ?> 
+                      <option value="<?php echo $c['id']; ?>"><?php echo $c['Nom']; ?></option>
+                      <?php
+                      }
+                    ?> 
+                        </select>
+                   </span>
+				  </li>
                 <li class="form-group">
                   Date de l'événement :  
                   <span class="ml-auto"><input type="date" class="form-control" name="date_eve" required></span>

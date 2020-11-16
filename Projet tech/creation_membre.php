@@ -70,6 +70,7 @@
               <ul class="list-unstyled list-hours mb-5 text-left ">
                  <h3> Les Membres du Club </h3>
                 <?php 
+				session_start ();
       require'Database_connexion.php';
       require'type.php';
       require'specialite.php';
@@ -79,10 +80,11 @@
                 $t = new Type(0,"");
                 $s = new Specialite(0,"");
                 $p = new Promotion(0,"");
+
                ?>
                  <li class="list-unstyled-item list-hours-item d-flex">
-                  <span class="ml-auto p-2"><input type="text" name="nom_prenom1" placeholder="Nom & Prénom"></span>
-                  <span class="ml-auto p-2"><input type="text" name="fonction1" placeholder="Fonction"></span>
+                  <span class="ml-auto p-2"><input type="text" name="nom_prenom1" value="<?php echo $_SESSION['bob']; ?>" readonly /></span>
+                  <span class="ml-auto p-2"><input type="text" name="fonction1" value="Président" readonly /></span>
                   <span class="ml-auto p-2">
                     <select id="promotion1"  name="promotion1" class="select"> 
                       <option value="0">Sélectionner une promotion</option>

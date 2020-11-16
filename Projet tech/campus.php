@@ -1,6 +1,5 @@
 <?php
 // on utilise cette variable pour securiser l'acces a une page qui demande une connectoin
-require'Database_connexion.php';
 Class Campus{
 
    public $id ;

@@ -108,10 +108,10 @@
                   Date de création : 
                   <span class="ml-auto"><input type="date" class="form-control" name="date" required></span>
                 </li>
-                <li class="form-group">
+                <!--<li class="form-group">
                   Chef de projet : 
                   <span class="ml-auto"><input type="text"  class="form-control" name="chef" required></span>
-                </li>
+                </li>-->
                <li class="form-group">
                   Promotion : 
                   <span class="ml-auto">

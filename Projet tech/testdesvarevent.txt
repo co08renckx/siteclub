@@ -13,3 +13,52 @@ test3/1/2020-10-29/19:28/16:30/salle A117/test/2020/54/moi/test/0/0/0/0
 test3/1/2020/19:28/16:30/test/salle A117/2020-10-29/test/54/moi/0/0
 test/1/2020-10-14/17:07/17:07/salle A117/test/2020/54/moi/test/1/0/0/0
 test/1/2020/17:07/17:07/test/salle A117/2020-10-14/test/54/moi/1/0
+pizza/1/2020-11-05/09:49/10:49/Chez moi/manger/2020-2021/4/tom/manger et du fric/1/100000000000000/0/0
+
+pizza/1/2020-2021/09:49/10:49/manger/Chez moi/2020-11-05/manger et du fric/4/tom/1/100000000000000
+
+pizza/1/2020-11-05/10:46/11:46/Calais/Pizza/2020-2021/4/tom/pizza/1/500/0/0
+
+pizza/1/2020-2021/10:46/11:46/Pizza/Calais/2020-11-05/pizza/4/tom/1/500
+
+test2/1/2020-11-11/09:55/09:53/salle A117/test/2020/4/moi/test/1/512/0/0
+
+test2/1/2020/09:55/09:53/test/salle A117/2020-11-11/test/4/moi/1/512
+
+pizza/1/2020-11-06/12:00/13:30/Chez moi/manger/2020-2021/4/tom/manger/1/10000000000000/0/0
+
+pizza/1/2020-2021/12:00/13:30/manger/Chez moi/2020-11-06/manger/4/tom/1/10000000000000
+
+pizza/1/2020-11-20/12:00/13:00/Calais/manger/2020-2021/4/tom/test/1/50/0/0
+
+pizza/1/2020-2021/12:00/13:00/manger/Calais/2020-11-20/test/4/tom/1/50
+
+pizza/1/2020-11-25/12:00/13:00/Chez moi/manger/2020-2021/4/tom/test/1/10/0/0
+
+pizza/1/2020-2021/12:00/13:00/manger/Chez moi/2020-11-25/test/4/tom/1/10
+
+pizza/1/2020-11-20/12:00/13:30/Chez moi/manger/2020-2021/53/tom/test/1/10/0/0
+
+pizza/1/2020-2021/12:00/13:30/manger/Chez moi/2020-11-20/test/53/tom/1/10
+
+test2/1/2020-11-20/12:00/13:00/Chez moi/manger/2020-2021/4/tom/test/1/50/0/0
+
+test2/1/2020-2021/12:00/13:00/manger/Chez moi/2020-11-20/test/4/tom/1/50
+
+test2/1/2020-11-15/12:00/13:00/Chez moi/manger/2020-2021/53/tom/test/1/50/0/0
+
+test2/1/2020-2021/12:00/13:00/manger/Chez moi/2020-11-15/test/53/tom/1/50
+
+test3/1/2020-11-06/12:00/13:00/Chez moi/manger/2020-2021/4/moi/test/1/50/0/0
+
+test3/1/2020-2021/12:00/13:00/manger/Chez moi/2020-11-06/test/4/moi/1/50
+
+test3/1/2020-11-13/12:00/13:00/Chez moi/manger/2020/4/tom/test/1/10/0/0
+
+test3/1/2020/12:00/13:00/manger/Chez moi/2020-11-13/test/4/tom/1/10
+pizza/1/2020-11-13/10:30/12:30/Chez moi/manger/2020-2021/62/helinckx corentin/test/1/1000/0/0
+pizza/1/2020-2021/10:30/12:30/manger/Chez moi/2020-11-13/test//helinckx corentin/1/1000
+pizza2/1/2020-11-19/15:30/16:30/salle A117/test/2020-2021/61/Tom Lefebvre/test2/0/0/0/0
+pizza2/1/2020-2021/15:30/16:30/test/salle A117/2020-11-19/test2//Tom Lefebvre/0/0
+test3/1/2020-11-19/10:49/10:49/Chez moi/manger/2020-2021/61/Tom Lefebvre/test/1/10/0/0
+test3/1/2020-2021/10:49/10:49/manger/Chez moi/2020-11-19/test//Tom Lefebvre/1/10

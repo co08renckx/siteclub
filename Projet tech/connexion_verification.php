@@ -29,7 +29,6 @@ $rows1 = $req1->rowCount();
 $req1->closeCursor();
 
 if($rows1 == 1) { // si le nombre de ligne est 1 email trouvé !
-	$_SESSION['id'] = $donnees1['id'];
 	$_SESSION['login'] = $donnees1['Nom'];
 	$_SESSION['login_ok'] = true;
 	header('location: index.php');
@@ -37,7 +36,6 @@ if($rows1 == 1) { // si le nombre de ligne est 1 email trouvé !
 	
 }
 else if ($rows == 1){
-    $_SESSION['id'] = $donnees['id'];
 	$_SESSION['login'] = $donnees['Nom'];
 	$_SESSION['login_ok'] = true;
 	if($_SESSION['login']=="BDE"){

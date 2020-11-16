@@ -11,16 +11,15 @@ require 'PHPMailer/src/PHPMailer.php';
 require 'PHPMailer/src/SMTP.php';
 // Load Composer's autoloader
 require './vendor/autoload.php';
-$id = $_SESSION['id'];;
 
 if(isset($_POST['Organiser'])){ 
         if ( !empty($_POST['nom_eve'])  ) { 
 
-            $evenement = new Evenement($_POST['nom_eve'],$_POST['campus'],$_POST['annee_eve'],$_POST['h_d'],$_POST['h_f'],$_POST['type_eve'],$_POST['lieu'],$_POST['date_eve'],$_POST['obj'],$id,$_POST['resp_eve'],$_POST['aide'],$_POST['montant_eve']);
+            $evenement = new Evenement($_POST['nom_eve'],$_POST['campus'],$_POST['annee_eve'],$_POST['h_d'],$_POST['h_f'],$_POST['type_eve'],$_POST['lieu'],$_POST['date_eve'],$_POST['obj'],$_POST['club_id'],$_SESSION['login'],$_POST['aide'],$_POST['montant_eve']);
             $evenement->AddEvent();
 
             $fichier = fopen("testdesvarevent.txt","a");
-            $donnees= $_POST['nom_eve']."/".$_POST['campus']."/".$_POST['annee_eve']."/".$_POST['h_d']."/".$_POST['h_f']."/".$_POST['type_eve']."/".$_POST['lieu']."/".$_POST['date_eve']."/".$_POST['obj']."/".$id."/".$_POST['resp_eve']."/".$_POST['aide']."/".$_POST['montant_eve']."\n";
+            $donnees= $_POST['nom_eve']."/".$_POST['campus']."/".$_POST['annee_eve']."/".$_POST['h_d']."/".$_POST['h_f']."/".$_POST['type_eve']."/".$_POST['lieu']."/".$_POST['date_eve']."/".$_POST['obj']."/".$id."/".$_SESSION['login']."/".$_POST['aide']."/".$_POST['montant_eve']."\n";
             fwrite($fichier,$donnees);
             fclose($fichier);
 
