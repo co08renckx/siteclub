@@ -93,8 +93,12 @@
   require'Appartenance.php';
   require'Membre.php';
   require'Evenement_Classe.php';
-  $id_club = $_SESSION['id'];
+  //$id_club = $_SESSION['id'];
+  $login = $_SESSION['login'];
+
 ?>
+
+
 <section class="page-section">
   <div class="row " >
       <nav class="navbar-fixed-left" >
@@ -111,14 +115,18 @@
           </div>
          </div>
       </nav>
+		<script>
+				console.log(<?php echo $login; ?>);
+		</script>
       <style type="text/css">b {color: #87CEFA;}</style>
       <div class="col-9" >
         <div class="tab-content" id="v-pills-tabContent">
           <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab" >
              <div class="row row-cols-1 row-cols-md-1">
+			 
               <?php
                 $event=new Evenement("","","",0,0,"","","","",0,"",0,0);
-                $events = $event->FindEventUntreatedClub($id_club);
+                $events = $event->FindEventUntreatedClub($login);
                 foreach ($events as $e) {
                ?>
               <div class="col col-md-auto" >
@@ -143,8 +151,11 @@
              <div class="row row-cols-1 row-cols-md-1">
               <?php
                 $event=new Evenement("","","",0,0,"","","","",0,"",0,0);
-                $events = $event->FindEventtreatedClub($id_club);;
-                foreach ($events as $e) {
+                $events = $event->FindEventtreatedClub($login);
+				//$fichier = fopen("testdeseventsrecup.txt","a");
+				//fwrite($fichier,$events);
+				//fclose($fichier);
+				foreach ($events as $e) {
                ?>
               <div class="col col-md-auto" style="margin-bottom: 20px;font-family:Raleway;">
                 <div class="card border border-primary rounded" style="width: auto;">

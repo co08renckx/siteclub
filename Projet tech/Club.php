@@ -137,15 +137,30 @@ Class Club{
     return $req ;
 
    }
-   function FindClub($id){
+   
+   /*function FindClub($id){
     $BDD=Database_Connexion();
     $sql ='select * from Club where id ='.$id;
     $req=$BDD->query($sql);
 
     return $req ;
 
+   }*/
+   
+   function FindClub($mail){
+    $BDD=Database_Connexion();
+    $sql ='select * from Club where Email ='.$mail;
+    $req=$BDD->query($sql);
+
+    return $req ;
+
    }
-   function FindClubEmail($id){
+   
+   
+   
+   
+   
+   /*function FindClubEmail($id){
     $BDD=Database_Connexion();
     $sql ='select Email from Club where id ='.$id;
     $req=$BDD->query($sql);
@@ -153,7 +168,19 @@ Class Club{
 
     return $req ;
 
+   }*/
+   
+   function FindClubEmail($mail){
+    $BDD=Database_Connexion();
+    $sql ='select Email from Club where Email ='.$mail;
+    $req=$BDD->query($sql);
+    
+
+    return $req ;
+
    }
+   
+   
    function FindClubUntreatedBDE(){
     $BDD=Database_Connexion();
     $sql ='Select * from Club where approuve_BDE=0';
@@ -162,6 +189,8 @@ Class Club{
     return $req ;
     
    }
+  
+   
     function FindClubtreatedBDE(){
     $BDD=Database_Connexion();
     $sql ='Select * from Club where approuve_BDE=1';

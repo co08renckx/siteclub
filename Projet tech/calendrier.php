@@ -94,7 +94,7 @@
     </div>
   </nav>
   <?php }
-    else if($_SESSION['login'] != 'BDE' and $_SESSION['login'] != 'SABINE Rensy'){ ?>
+    else if($_SESSION['login'] != 'BDE' and $_SESSION['login'] != 'SABINE Delvart'){ ?>
      <nav class="navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
       <div class="container">
         <a class="navbar-brand text-uppercase text-expanded font-weight-bold d-lg-none" href="index.php">Eilco's Club</a>
@@ -127,7 +127,7 @@
         </div>
       </div>
     </nav>
-  <?php } else if($_SESSION['login'] == 'SABINE Rensy')  {?>
+  <?php } else if($_SESSION['login'] == 'SABINE Delvart')  {?>
     <nav class="navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
       <div class="container">
         <a class="navbar-brand text-uppercase text-expanded font-weight-bold d-lg-none" href="index.php">Eilco's Club</a>

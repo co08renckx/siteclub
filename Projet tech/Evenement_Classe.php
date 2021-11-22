@@ -170,7 +170,7 @@ Class Evenement{
    }
     function FindEventtreatedResponsable(){
     $BDD=Database_Connexion();
-    $sql ='Select * from Evenement where approuve_responsable=1 and approuve_bde=1';
+    $sql ='Select * from evenement where approuve_responsable=1 and approuve_bde=1';
     $req=$BDD->query($sql);
 
     return $req ;
@@ -179,7 +179,7 @@ Class Evenement{
    }
    function FindEventUntreatedClub($id){
     $BDD=Database_Connexion();
-    $sql ='Select * from Evenement where approuve_responsable=0 or approuve_bde=0 and id_club = '.$id;
+    $sql ='Select * from Evenement where Responsable = "'.$id.'" and (approuve_responsable=0 or approuve_bde=0) '; 
     $req=$BDD->query($sql);
 
     return $req ;
@@ -188,7 +188,7 @@ Class Evenement{
    }
    function FindEventtreatedClub($id){
     $BDD=Database_Connexion();
-    $sql ='Select * from Evenement where approuve_responsable=1 and approuve_bde=1 and id_club = '.$id;
+    $sql ='Select * from Evenement where Responsable = "'.$id.'" and approuve_responsable=1 and approuve_bde=1 '; 
     $req=$BDD->query($sql);
 
     return $req ;

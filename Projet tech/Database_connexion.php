@@ -3,7 +3,7 @@ function Database_Connexion(){
 
 $dsn = "mysql:host=localhost;dbname=projet_tech";
 $user = "root";
-$passwd = "root";
+$passwd = "";
 try {
     $pdo = new PDO($dsn, $user, $passwd);
 }

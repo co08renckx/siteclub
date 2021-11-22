@@ -10,7 +10,7 @@
                     <li><a href="#">Haut de page</a></li>
                     <br />
                     <br />
-                    <a href="http://www.eilco-ulco.fr/"> <img src='https://upload.wikimedia.org/wikipedia/commons/0/0c/Logoeilcofondbleuclair.png' width="173" height="72.5"></a>
+                    <img src="./img/logo.jpg" width="173" height="72.5"></a>
                     </li>
                 </ul>
             </div><!-- widgets column left end -->
@@ -54,7 +54,7 @@
                         <!-- widgets list -->
                         <h1 class="title-widget">Nous Contacter</h1>
                         <div class="footerp">
-                            <h2 class="title-median">BDE EILCO Lagoon</h2>
+                            <h2 class="title-median">BDE EILCO </h2>
                             <p><b>Email: </b> <a href="mailto:bde@eilco-ulco.fr">bde@eilco-ulco.fr</a></p>
                             <p>---</p>
                             <p><b>Nous trouver : </b></p>

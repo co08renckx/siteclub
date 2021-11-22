@@ -113,6 +113,9 @@
                       $clubs = $club->AllClubFromUser($chef);
                       foreach ($clubs as $c) {
                     ?> 
+						<script>
+					  console.log(<?php echo $chef;?>);
+					  </script>
                       <option value="<?php echo $c['id']; ?>"><?php echo $c['Nom']; ?></option>
                       <?php
                       }

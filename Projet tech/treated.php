@@ -37,7 +37,8 @@ try {
     //Recipients
     $mail->setFrom('eilcosclub.plateforme@gmail.com', 'Eilco Club');
      // Add a recipient
-    $mail->addAddress('sabine.rensy@eilco-ulco.fr');               // Name is optional
+    $mail->addAddress('sabine.delvart@eilco-ulco.fr');	// Name is optional
+	$mail->AddCC('jean-francois.bernard@eilco-ulco.fr');
     
 
     // Attachments
@@ -46,7 +47,7 @@ try {
     // Content
     $mail->isHTML(true);                                  // Set email format to HTML
     $mail->Subject = 'New Club is here';
-    $mail->Body    = utf8_decode("Bonjour Madame Sabine Rensy,<br><br>
+    $mail->Body    = utf8_decode("Bonjour Madame SABINE Delvart,<br><br>
     LE BDE vient de valider la demande de création du club ".$_POST['validerr_club']."
 
      .<br><br> Veuillez consulter votre espace personnel pour valider ou refuser la demande.<br><br>Cordialement<br><br>Eilco's Club");
@@ -123,7 +124,8 @@ try {
     //Recipients
     $mail->setFrom('eilcosclub.plateforme@gmail.com', 'Eilco Club');
      // Add a recipient
-    $mail->addAddress('sabine.rensy@eilco-ulco.fr');                 // Name is optional
+    $mail->addAddress('sabine.delvart@eilco-ulco.fr');                 // Name is optional
+	$mail->AddCC('jean-francois.bernard@eilco-ulco.fr');
     
 
     // Attachments
@@ -132,7 +134,7 @@ try {
     // Content
     $mail->isHTML(true);                                  // Set email format to HTML
     $mail->Subject = utf8_decode("Validation d'un évènement");
-    $mail->Body    = utf8_decode("Bonjour Madame Sabine Rensy,<br><br>
+    $mail->Body    = utf8_decode("Bonjour Madame SABINE Delvart,<br><br>
     LE BDE vient de valider la demande d'organisation de l'évènement ".$_POST['validerr_event']."
 
     .<br><br>Veuillez consulter votre espace personnel pour valider ou refuser la demande.<br><br>Cordialement<br><br>Eilco Club");
@@ -194,7 +196,7 @@ try {
 }
 
 
-if($_SESSION['login'] == "SABINE Rensy"){
+if($_SESSION['login'] == "SABINE Delvart"){
     if(isset($_POST['valider_club']) and $_POST['v']=="Valider"){
         $n = $club->ValidClubResponsable($_POST['valider_club']);
         if ($n==1) {
@@ -225,7 +227,7 @@ try {
     $mail->isHTML(true);                                   // Set email format to HTML
     $mail->Subject = 'Validation de Votre Club ';
     $mail->Body    = utf8_decode("Bonjour ".$_POST['validerr_club'].",<br><br>
-    Madame Sabine Rensy vient de valider votre demande de création du club ".$_POST['validerr_club']."
+    Madame SABINE Delvart vient de valider votre demande de création du club ".$_POST['validerr_club']."
 
      .<br><br> Vous pouvez maintenant consulter votre espace personnel pour organiser des évènements.<br><br>Cordialement<br><br>Eilco's Club");
     $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
@@ -268,7 +270,7 @@ try {
     $mail->isHTML(true);                                  // Set email format to HTML
     $mail->Subject = 'Traitement de votre demande';
     $mail->Body    = utf8_decode("Bonjour ".$_POST['validerr_club'].",<br><br>
-    Madame Sabine Rensy vient de refuser la demande de création  de votre club ".$_POST['validerr_club']." en donnant la raison  ".$_POST['cause_club']."<br><br>Cordialement<br><br>Eilco Club");
+    Madame SABINE Delvart vient de refuser la demande de création  de votre club ".$_POST['validerr_club']." en donnant la raison  ".$_POST['cause_club']."<br><br>Cordialement<br><br>Eilco Club");
     $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
 
     $mail->send();
@@ -306,7 +308,7 @@ try {
     $mail->isHTML(true);                                  // Set email format to HTML
     $mail->Subject = utf8_decode("Validation d'un évènement");
     $mail->Body    = utf8_decode("Bonjour ".$_POST['validerr_club'].",<br><br>
-    Madame Sabine Rensy vient de valider la demande d'organisation de l'évènement ".$_POST['validerr_event']."
+    Madame SABINE Delvart vient de valider la demande d'organisation de l'évènement ".$_POST['validerr_event']."
 
     .<br><br>Veuillez consulter votre espace personnel pour vérifier le traitement de votre évènement.<br><br>Cordialement<br><br>Eilco Club");
     $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
@@ -346,7 +348,7 @@ try {
     $mail->isHTML(true);                                  // Set email format to HTML
     $mail->Subject = 'Traitement de votre demande';
     $mail->Body    = utf8_decode("Bonjour ".$_POST['validerr_club'].",<br><br>
-    Madame Sabine Rensy vient de refuser la demande d'organisation du  votre évènement ".$_POST['validerr_event']." en donnant la raison  ".$_POST['cause_event']."<br><br>Cordialement<br><br>Eilco Club");
+    Madame SABINE Delvart vient de refuser la demande d'organisation du  votre évènement ".$_POST['validerr_event']." en donnant la raison  ".$_POST['cause_event']."<br><br>Cordialement<br><br>Eilco Club");
     $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
 
     $mail->send();

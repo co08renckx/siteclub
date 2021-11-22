@@ -5,7 +5,7 @@ require'Database_connexion.php';
 require 'Soutenance.php';
 
 
-if($_SESSION['login'] == "SABINE Rensy"){
+if($_SESSION['login'] == "DELVART Rensy"){
 	if(isset($_POST['Ajouter']) and $_POST['Ajouter']=="Ajouter"){
         if ( !empty($_POST['int_sout'])  and  !empty($_POST['date_sout']) and  !empty($_POST['club_id'])and  !empty($_POST['heure_sout'])) {
             $soutenance2 = new Soutenance($_POST['club_id'],$_POST['int_sout'],$_POST['date_sout'],$_POST['heure_sout']);
